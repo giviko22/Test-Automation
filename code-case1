@@ -1,0 +1,164 @@
+from selenium import webdriver
+from allure_commons.types import AttachmentType
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import allure
+import pytest
+
+class Test:
+    def test_1(self):
+
+        self.driver=webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("სერვისები")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(),name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_2(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("გადარიცხვები")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_3(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("ბიზნესისთვის")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_4(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("გადაიხადე უცხოეთიდან")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+
+    def test_5(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("პოპულარული სერვისები")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_6(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("მობილური კავშირი")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_7(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("ბანკები დაზღვევა მიკროსაფინანსო")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_8(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("ტოტალიზატორები კაზინო ლატარია")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_9(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("ინტერნეტი ტელეფონი ტელევიზია")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_10(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("კომუნალური გადასახადები")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_11(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("ტრანსპორტი")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_12(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("სახელმწიფო სერვისები")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_13(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_partial_link_text("სხვადასხვა")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
+
+    def test_14(self):
+
+        self.driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+        self.driver.get("https://tbcpay.ge/")
+        link = self.driver.find_element_by_name("searchWord")
+        link.click()
+
+        allure.attach(self.driver.get_screenshot_as_png(), name="testLoginScreen",
+                      attachment_type=AttachmentType.PNG)
+        self.driver.close()
